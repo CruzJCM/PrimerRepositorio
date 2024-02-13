@@ -4,53 +4,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-    <link rel="icon" href="./assets/imagenes/logo.png" >
-    <title>Proyecto-Final</title>
+    <link rel="icon" href="/imagenes/icons8-harry-potter-96.png" >
+    <title>Hogwarts Experience</title>
 </head>
 <body class="body-day">
     <nav>
-        <a href='/'>
-            <svg  width="200" height="80">
-                <rect x="45" y="5" width="60" height="35" rx="5" id="mon1" fill="#F0E9D2"></rect>
-                <rect x="50" y="10" width="50" height="25" rx="5" id="mon2" fill="#495579"></rect>
-                <polygon points="55 45 ,95 45,115 62,30 62" fill="#F0E9D2" id="tec1"></polygon>
-                <polygon points="57 48 ,92 48,104 58,43 58" fill="#495579" id="tec2"></polygon>
-            </svg>
-            </a>
+        <a href='/index.html'>
+            <img src="./imagenes/Captura de pantalla 2024-01-11 205604.png" alt="Wizarding World">
+        </a>
         <ul class="menu">
-            <li class="item-menu"><a class='item-link' href='../historia/hist.html'>HISTORIA</a></li>
-            <li class="item-menu"><a class='item-link' href='./jug.html'>JUGUEMOS</a></li>
+            <li class="item-menu"><a class='item-link' href='../datos/hist.html'>DATOS CURIOSOS</a></li>
+            <li class="item-menu"><a class='item-link' href='./jug.html'>JUEGO</a></li>
         </ul>
     </nav>
     <header>
-        <h1 class="titulo-blanco"> JUGUEMOS UN POCO</h1> 
+        <h1 class="titulo-blanco"> ¿Puedes identificar correctamente las casas de Hogwarts?<br>Te desafiamos</h1> 
         
     </header>
 
     <main>
-<h2>Armemos el rompecabezas y veamos que imagen es...</h2>
+<h2>Te desafiamos a colocar cada casa de Hogwarts en su casillero correspondiente</h2>
 
         <section class="juego">
             <div class="cajas" >
                 <div class="caja" id="cajasoltar">
-                    <p>Arrastre y suelte la imágene aquí</p>
+                    <p> Valora el aprendizaje, la sabiduría, el ingenio, y el intelecto como elementos importantes para formar parte de su casa. Al ser magos de mucho talento, Hermione Granger estuvo a punto de ser seleccionada por esta casa.
+                    <br><br>
+                    Miembros más famosos: Luna Lovegood, Cho Chang.</p>
                 </div>
                 <div class="caja" id="cajasoltar2">
-                    <p>Arrastre y suelte la imágene aquí</p>
+                    <p>Cuenta con miembros ambiciosos, inteligentes, muy astutos y que tienden a ser líderes fuertes. Aunque también son unos supervivientes, lo que les hace pensar antes de actuar (al contrario que los Gryffindor), pese a tener un claro desprecio por las reglas.
+                    <br><br>
+                    Miembros más famosos: Voldemort, Draco Malfoy.</p>
                 </div>
                 <div class="caja" id="cajasoltar3">
-                    <p>Arrastre y suelte la imágene aquí</p>
+                    <p>Se caracteriza por valorar la capacidad de trabajo, con estudiantes amigables y leales. Los estudiantes de esta casa son conocidos por ser trabajadores, amigables, leales y sin prejuicios.
+                    <br><br>
+                    Miembros más famosos: Newt Scamander, Cedric Diggory, Nymphadora Tonks, profesora Pomona Sporut.</p>
+                </div>
+                <div class="caja" id="cajasoltar4">
+                    <p>Valora el coraje por encima de todo, pero también la osadía, el temple y la caballerosidad. Sus estudiantes son valientes, pero también muy imprudentes.
+                    <br><br>
+                    Miembros más famosos: Harry Potter, Ron Weasley, Hermione Granger, Albus Dumbledore.</p>
                 </div>
             </div>
             <div id="cajaimagenes" >
-                <img id="imagen1" src="./assets/imagenes/rompe2.png" alt="imagen-rompecabezas" />
-                <img id="imagen2" src="./assets/imagenes/Rompe1.png" alt="imagen-rompecabezas" />
-                <img id="imagen3" src="./assets/imagenes/Rompe3.png" alt="imagen-rompecabezas" />
+                <img id="imagen1" src="./imagenes/gry.jpg" alt="rojo y dorado" />
+                <img id="imagen2" src="./imagenes/huf.jpg" alt="amarillo y negro" />
+                <img id="imagen3" src="./imagenes/slt.jpg" alt="verde y plata" />
+                <img id="imagen4" src="./imagenes/rav.jpg" alt="azul y bronce" />
             </div>
         </section>
         <button onclick="reinicio()" class="botonesVideo reinicio" >Reiniciar</button>
 
     </main>
-    <script src="./scriptHist.js"></script>
+    <script src="script.js"></script>
+    <footer>
+        <div class="footer-left">
+            <h3 class="titulo-blanco titulo-foot"> Hogwarts Experience </h3>
+        </div>
+           <div>Sitio creado por Juan Cruz Morales</div>
+    </footer>
 </body>
 </html>

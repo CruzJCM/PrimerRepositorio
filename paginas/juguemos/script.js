@@ -7,19 +7,19 @@ function iniciar(){
     var imagenes=document.querySelectorAll('#cajaimagenes img');
      soltar=document.getElementById('cajasoltar');  
      soltar2  =document.getElementById('cajasoltar2'); 
-     soltar3 = document.getElementById('cajasoltar3'); 
+     soltar3 = document.getElementById('cajasoltar3');
+     soltar4 = document.getElementById('cajasoltar4'); 
 
     for(var i=0; i<imagenes.length; i++){
         imagenes[i].addEventListener('dragstart', arrastrado, false);
-        // imagenes[i].addEventListener('dragend', finalizado, false);
     }
 
     soltar.addEventListener('dragenter', function(e){
     e.preventDefault(); }, false);
     soltar.addEventListener('dragover', function(e){
-    e.preventDefault(); }, false)
+    e.preventDefault(); }, false);
       
-    ;
+
     soltar.addEventListener('drop', soltado, false);
 
 
@@ -36,6 +36,13 @@ function iniciar(){
     e.preventDefault(); }, false);
     soltar3.addEventListener('drop', soltado, false);
 
+
+    soltar4.addEventListener('dragenter', function(e){
+        e.preventDefault(); }, false);
+    soltar4.addEventListener('dragover', function(e){
+    e.preventDefault(); }, false);
+    soltar4.addEventListener('drop', soltado, false);
+
 }
 function arrastrado(e){
     elemento=e.target;
@@ -50,11 +57,8 @@ async function soltado(e){
     imagen.style.display= 'none';
      e.target.innerHTML='<img src="'+imagen.src+'" height="400px" width="275px">';
     contador++
-
-
 }
 function reinicio() {
     window.location.reload();
 }
 iniciar()
-//window.addEventListener('load', iniciar, false);
